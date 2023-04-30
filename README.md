@@ -1,8 +1,8 @@
 # Health Topic Classifier
 
-Health Topic Classifier is a machine learning model that classifies whether a given question is related to healthcare topics or not. This repository contains the code and data to train and test the classifier.
+Health Topic Classifier is a machine learning model that classifies whether a given question is related to health topics or not. This repository contains the code and data to train and test the classifier.
 
-For the understanding of the problem and the creation of the code, the book Natural Language Processing with Transformers (O'Reilly) was consulted. The corresponding Jupyter notebook can be accessed here: https://github.com/nlp-with-transformers/notebooks/blob/main/02_classification.ipynb
+For the understanding of the problem and the creation of the code, the book "Natural Language Processing with Transformers" (O'Reilly) was consulted. The corresponding Jupyter notebook can be accessed here: https://github.com/nlp-with-transformers/notebooks/blob/main/02_classification.ipynb
 
 ## Table of Contents
 
