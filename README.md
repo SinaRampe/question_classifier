@@ -18,9 +18,9 @@ The model is built using Python and the DistilBERT base model (uncased) witch is
 
 ## Dataset
 
-The dataset used in this project is a self composed, labeled and balanced dataset. We used 1900 hand-labeled questions from the Stanford Question Answering Dataset (of which 80 were health questions) and 1740 questions from other healthcare-Q&A-Datasets like AskDocs https://github.com/ju-resplande/askD and others, that can be found here https://github.com/LasseRegin/medical-question-answer-data.
+The dataset used in this project is a self composed, labeled and balanced dataset. I used 1900 hand-labeled questions from the Stanford Question Answering Dataset (of which 80 were health questions) and 1740 questions from other healthcare-Q&A-Datasets like AskDocs https://github.com/ju-resplande/askD and others, that can be found here https://github.com/LasseRegin/medical-question-answer-data.
 
 The dataset is divided into training and testing sets, which can be found in the `data` folder of this repository.
 
-## contributing tbd
+
 
