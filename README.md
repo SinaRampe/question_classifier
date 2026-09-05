@@ -7,7 +7,7 @@ health(care) topic. Built on a method from
 no fine-tuning, small and fast, ~98% accuracy on the held-out split.
 
 This project was my portfolio piece in a 2022 data-science bootcamp; I built
-and labeled it on my own. In 2025 the repository was reworked for licensing
+and labeled it on my own. In 2026 the repository was reworked for licensing
 compliance: the raw question texts were removed and replaced by a
 reproducible build pipeline (see below for what changed and why).
 
@@ -68,4 +68,4 @@ data/                    # generated output (git-ignored)
   (O'Reilly), Apache-2.0 — see NOTICE.
 - Dataset licenses: SQuAD v1.1 CC BY-SA 4.0; AskDocs GPL-3.0.
 - Everything else in this repository (code, labels, documentation):
-  Apache-2.0 (see LICENSE), © 2022–2025 Sina Rampe.
+  Apache-2.0 (see LICENSE), © 2022–2026 Sina Rampe.
