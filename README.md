@@ -4,7 +4,8 @@ A lightweight text classifier that decides whether a question is about a
 health(care) topic. Built on a method from
 [*Natural Language Processing with Transformers*](https://github.com/nlp-with-transformers/notebooks)
 (O'Reilly): DistilBERT's frozen hidden states + a logistic-regression head —
-no fine-tuning, small and fast, ~98% accuracy on the held-out split.
+a full training run that trains only 769 parameters (the encoder's 66M stay
+frozen), runs on CPU, ~98% accuracy on the held-out split.
 
 This classifier was part of a team portfolio project in my 2022 data-science
 bootcamp; the classifier itself — concept, labeling, implementation — I built
