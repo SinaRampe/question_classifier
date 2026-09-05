@@ -6,8 +6,9 @@ health(care) topic. Built on a method from
 (O'Reilly): DistilBERT's frozen hidden states + a logistic-regression head —
 no fine-tuning, small and fast, ~98% accuracy on the held-out split.
 
-This project was my portfolio piece in a 2022 data-science bootcamp; I built
-and labeled it on my own. In 2026 the repository was reworked for licensing
+This classifier was part of a team portfolio project in my 2022 data-science
+bootcamp; the classifier itself — concept, labeling, implementation — I built
+on my own. In 2026 the repository was reworked for licensing
 compliance: the raw question texts were removed and replaced by a
 reproducible build pipeline (see below for what changed and why).
 
