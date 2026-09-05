@@ -23,6 +23,15 @@ reproducible build pipeline (see below for what changed and why).
    projects them with UMAP for visualization, and fits a logistic
    regression on top.
 
+The 768-dimensional hidden states, projected to 2D with UMAP (cosine metric)
+— the two classes fall apart cleanly, which is why 769 trained parameters
+are enough:
+
+![UMAP projection of the frozen DistilBERT [CLS] hidden states on the
+training split. Left: non-health questions (blue density), right: health
+questions (red density). The two densities occupy distinct regions of the
+2D embedding.](docs/umap_hidden_states.png)
+
 ```bash
 python build_data.py        # downloads sources, writes data/*.csv
 python evaluate.py           # trains + scores the classifier (CPU, ~5 min)
@@ -67,8 +76,10 @@ more rows — the classifier was already in its saturation region.
 train_classifier.ipynb   # end-to-end: encode -> features -> logistic regression
 build_data.py            # dataset build from upstream sources
 evaluate.py              # same method as a script: train + score, no Jupyter
+visualize.py             # UMAP 2D projection of the hidden states -> docs/*.png
 labels.csv               # labeling decisions (source, source_id, label, split)
 data/                    # generated output (git-ignored)
+docs/                    # generated figures (committed)
 ```
 
 ## Credits & license
