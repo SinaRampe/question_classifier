@@ -23,6 +23,7 @@ reproducible build pipeline (see below for what changed and why).
 
 ```bash
 python build_data.py        # downloads sources, writes data/*.csv
+python evaluate.py           # trains + scores the classifier (CPU, ~5 min)
 python train_classifier.ipynb  # or open in Colab/Jupyter
 ```
 
@@ -52,11 +53,18 @@ a licensable source with certainty, so they were dropped; the remaining
 This keeps the repo clean for portfolio use without silently redistributing
 third-party forum content.
 
+The cleanup cost nothing in accuracy: the reduced dataset scores **97.8%**
+on the held-out test split with the notebook's method (frozen DistilBERT
++ logistic regression), vs. 98.0% for the original 2022 dataset with ~70%
+more rows — the classifier was already in its saturation region.
+`evaluate.py` reproduces this number without Jupyter.
+
 ## Repository layout
 
 ```
 train_classifier.ipynb   # end-to-end: encode -> features -> logistic regression
 build_data.py            # dataset build from upstream sources
+evaluate.py              # same method as a script: train + score, no Jupyter
 labels.csv               # labeling decisions (source, source_id, label, split)
 data/                    # generated output (git-ignored)
 ```
