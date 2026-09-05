@@ -1,0 +1,7 @@
+# Generated datasets - rebuild with: python build_data.py
+data/classifier_train.csv
+data/classifier_test.csv
+data/df_full.csv
+
+# Downloaded upstream sources (kept locally, NOT part of this repo / its license)
+.source_cache/
