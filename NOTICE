@@ -1,0 +1,21 @@
+NOTICE
+======
+
+This repository contains adaptations of the following upstream works:
+
+1. "Natural Language Processing with Transformers" — chapter 2
+   "Classification" notebook
+   https://github.com/nlp-with-transformers/notebooks
+   Copyright (c) various authors
+   Licensed under the Apache License, Version 2.0
+   The notebook `train_classifier.ipynb` in this repository is an
+   adaptation of that upstream notebook. The modifications are
+   Copyright 2023 Sina Rampe.
+
+2. This repository's build pipeline (`build_data.py` + `labels.csv`)
+   references — but does not redistribute — the following datasets:
+     - SQuAD v1.1 (Rajpurkar et al.), CC BY-SA 4.0
+     - AskDocs (Gomes, J. R. S.), GPL-3.0
+   See README.md ("Data sources & licenses") for details. Users
+   download these datasets directly from their upstream locations and
+   must comply with the respective upstream licenses.
